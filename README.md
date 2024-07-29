@@ -63,7 +63,7 @@
 }
 ```
 
-Результат
+Результат:
 
 ```py
 from pydantic import BaseModel
