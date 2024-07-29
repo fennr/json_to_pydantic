@@ -1,0 +1,20 @@
+{
+  "name": "Bob",
+  "age": 30,
+  "is_active": true,
+  "address": {
+    "street": "123 Main St",
+    "city": "Perm"
+  },
+  "tags": ["friend", "work"],
+  "projects": [
+    {
+      "name": "Project A",
+      "budget": 100000
+    },
+    {
+      "name": "Project B",
+      "budget": 200000
+    }
+  ]
+}
