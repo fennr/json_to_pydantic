@@ -2,9 +2,13 @@
 name = "json_to_pydantic"
 version = "0.1.0"
 edition = "2021"
+authors = ["Viktor Merkurev <mr.fennr@ya.ru>"]
+description = "Json to Pydantic CLI converter"
+repository = "https://github.com/fennr/json_to_pydantic"
+keywords = ["json_to_pydantic", "cli"]
+readme = "README.md"
 
 [dependencies]
-cargo-edit = "0.12.3"
-clap = "4.5.11"
-serde = "1.0.204"
-serde_json = "1.0.121"
+clap = "4.5.20"
+serde = "1.0.211"
+serde_json = "1.0.132"
