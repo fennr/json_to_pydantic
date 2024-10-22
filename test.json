@@ -3,8 +3,8 @@
   "age": 30,
   "is_active": true,
   "address": {
-    "street": "123 Main St",
-    "city": "Perm"
+    "streetName": "123 Main St",
+    "cityName": "Perm"
   },
   "tags": ["friend", "work"],
   "projects": [

@@ -66,25 +66,24 @@
 Результат:
 
 ```py
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import Any
 
-class ModelAddress(BaseModel):
-    city: str
-    street: str
+class Address(BaseModel):
+    city_name: str | None = Field(None, alias="cityName")
+    street_name: str | None = Field(None, alias="streetName")
 
 
-class ModelProjects(BaseModel):
-    budget: float
-    name: str
+class Projects(BaseModel):
+    budget: float | None = Field(None, alias="budget")
+    name: str | None = Field(None, alias="name")
 
 
 class Model(BaseModel):
-    address: ModelAddress
-    age: float
-    is_active: bool
-    name: str
-    projects: list[ModelProjects]
-    tags: list[str]
-
+    address: Address | None = Field(None, alias="address")
+    age: float | None = Field(None, alias="age")
+    is_active: bool | None = Field(None, alias="is_active")
+    name: str | None = Field(None, alias="name")
+    projects: list[Projects] | None = Field(None, alias="projects")
+    tags: list[str] | None = Field(None, alias="tags")
 ```

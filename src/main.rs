@@ -32,7 +32,7 @@ fn main() {
     parse::to_pydantic(&json, model_name, &mut models, &mut order);
 
     let mut pydantic_model =
-        "from pydantic import BaseModel\nfrom typing import Any\n\n".to_string();
+        "from pydantic import BaseModel, Field\nfrom typing import Any\n\n".to_string();
     while let Some(model) = order.pop_front() {
         pydantic_model.push_str(models.get(&model).unwrap());
         pydantic_model.push_str("\n\n");
