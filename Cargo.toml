@@ -1,6 +1,6 @@
 [package]
 name = "json_to_pydantic"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 authors = ["Viktor Merkurev <mr.fennr@ya.ru>"]
 description = "Json to Pydantic CLI converter"
